@@ -1,8 +1,10 @@
 from django.contrib.auth.models import User
 from django.http import JsonResponse
 from django.core.mail import send_mail
+from django.views.decorators.csrf import csrf_exempt
 import json
 
+@csrf_exempt
 def register_user(request):
     if request.method == "POST":
         body = json.loads(request.body.decode("utf-8"))
