@@ -37,7 +37,7 @@ def register_user(request):
         # ---------------------------
         # SEND BEAUTIFUL HTML EMAIL
         # ---------------------------
-        subject = "🎉 Welcome to Our Platform!"
+        subject = " Welcome to Our Platform!"
         from_email = "your_email@gmail.com"
         text_content = f"Hello {username}, welcome!"
         
@@ -47,7 +47,7 @@ def register_user(request):
             <div style="max-width:600px; margin:auto; background:white; padding:30px; 
                         border-radius:10px; box-shadow:0px 4px 14px rgba(0,0,0,0.1);">
 
-                <h2 style="color:#4b7bec; text-align:center;">Welcome, {username}! 🎉</h2>
+                <h2 style="color:#4b7bec; text-align:center;">Welcome, {username}! </h2>
 
                 <p style="font-size:15px; color:#333;">
                     Your account has been created successfully!  
